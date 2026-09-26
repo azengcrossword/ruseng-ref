@@ -43,7 +43,7 @@ const SUPABASE_URL = "https://ftuhaghnilhezqgwngfn.supabase.co";
 const SUPABASE_KEY = "sb_publishable_H4B85uUMmCCHqSAzT_rbDA_Srw9Braa";
 
 const params = new URLSearchParams(window.location.search);
-const token = params.get("token");
+   const token = params.get("t") || params.get("token");
 
 const iconEl = document.getElementById("icon");
 const titleEl = document.getElementById("title");
